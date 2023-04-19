@@ -27,55 +27,19 @@ class CourseDatabaseSeeder extends Seeder
         Model::unguard();
         $courses = [
             [
-                'name'                => 'Accepted payment 1',
-                'costCenterId'        => '1',
-                'rph'                 => '1',
-                'guaranteeIndicator'  => true,
-                'guaranteeTypeCode'   => '1',
-                'guaranteeId'         => '1',
-                'remark'              => 'Observacion 1',
+                'name'                => 'Programacion 1',
+                'description'         => 'Descripcion del curso de programacion 1',
+                'startDate'           => now()->toDateString(),
+                'endDate'             => now()->toDateString(),
                 'status'              => true
             ],
             [
-                'name'                => 'Accepted payment 2',
-                'costCenterId'        => '2',
-                'rph'                 => '2',
-                'guaranteeIndicator'  => true,
-                'guaranteeTypeCode'   => '2',
-                'guaranteeId'         => '2',
-                'remark'              => 'Observacion 2',
+                'name'                => 'Programacion 2',
+                'description'         => 'Descripcion del curso de programacion 2',
+                'startDate'           => now()->toDateString(),
+                'endDate'             => now()->toDateString(),
                 'status'              => true
-            ],
-            [
-                'name'                => 'Accepted payment 3',
-                'costCenterId'        => '3',
-                'rph'                 => '3',
-                'guaranteeIndicator'  => true,
-                'guaranteeTypeCode'   => '3',
-                'guaranteeId'         => '3',
-                'remark'              => 'Observacion 3',
-                'status'              => true
-            ],
-            [
-                'name'                => 'Accepted payment 4',
-                'costCenterId'        => '4',
-                'rph'                 => '4',
-                'guaranteeIndicator'  => true,
-                'guaranteeTypeCode'   => '4',
-                'guaranteeId'         => '4',
-                'remark'              => 'Observacion 4',
-                'status'              => true
-            ],
-            [
-                'name'                => 'Accepted payment 5',
-                'costCenterId'        => '5',
-                'rph'                 => '5',
-                'guaranteeIndicator'  => true,
-                'guaranteeTypeCode'   => '5',
-                'guaranteeId'         => '5',
-                'remark'              => 'Observacion 5',
-                'status'              => true
-            ],
+            ]
         ];
         foreach ($courses as $course) {
             $courseEntityRepository->create($course);

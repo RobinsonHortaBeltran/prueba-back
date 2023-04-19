@@ -3,9 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
-use Modules\AcceptedPayment\Database\Seeders\AcceptedPaymentDatabaseSeeder;
-
+use Modules\Course\Database\Seeders\CourseDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,9 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-
-            AcceptedPaymentDatabaseSeeder::class,
-
+            CourseDatabaseSeeder::class
         ]);
     }
 }
