@@ -23,14 +23,11 @@ class CourseValidateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'                   => ['required', 'string', 'min:1', 'max:255'],
-            'costCenterId'           => ['required', 'string', 'min:1', 'max:255'],
-            'rph'                    => ['required', 'string', 'min:1', 'max:255'],
-            'guaranteeIndicator'     => ['required', 'boolean'],
-            'guaranteeTypeCode'      => ['required', 'string', 'min:1', 'max:255'],
-            'guaranteeId'            => ['required', 'string', 'min:1', 'max:255'],
-            'remark'                 => ['required', 'string', 'min:1', 'max:255'],
-            'status'                 => ['required', 'boolean'],
+            'name'          => ['required', 'string', 'min:1', 'max:255'],
+            'description'   => ['required', 'string', 'min:1', 'max:255'],
+            'startDate'     => ['required','date'],
+            'endDate'       => ['required','date'],
+            'status'        => ['required', 'boolean'],
         ];
     }
 

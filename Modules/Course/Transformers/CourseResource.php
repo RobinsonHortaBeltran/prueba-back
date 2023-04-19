@@ -27,17 +27,14 @@ class CourseResource extends JsonResource
         /** @var CourseEntity $courseEntity */
         $courseEntity = $this->resource;
         return [
-            'id'                    => $courseEntity->getId(),
-            'name'                  => $courseEntity->getName(),
-            'costCenterId'          => $courseEntity->getCostCenterID(),
-            'rph'                   => $courseEntity->getRph(),
-            'guaranteeIndicator'    => $courseEntity->getGuaranteeIndicator(),
-            'guaranteeTypeCode'     => $courseEntity->getGuaranteeTypeCode(),
-            'guaranteeId'           => $courseEntity->getGuaranteeID(),
-            'remark'                => $courseEntity->getRemark(),
-            'status'                => $courseEntity->getStatus(),
-            'createdAt'             => $courseEntity->getCreatedAt()->format('Y-m-d H:i:s'),
-            'updatedAt'             => $courseEntity->getUpdatedAt()->format('Y-m-d H:i:s')
+            'id'           => $courseEntity->getId(),
+            'name'         => $courseEntity->getName(),
+            'description'  => $courseEntity->getDescription(),
+            'startDate'    => $courseEntity->getStarDate(),
+            'endDate'      => $courseEntity->getEndDate(),
+            'status'       => $courseEntity->getStatus(),
+            'createdAt'    => $courseEntity->getCreatedAt()->format('Y-m-d H:i:s'),
+            'updatedAt'    => $courseEntity->getUpdatedAt()->format('Y-m-d H:i:s')
         ];
     }
 }

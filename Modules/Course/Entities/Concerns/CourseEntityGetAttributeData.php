@@ -15,7 +15,7 @@ trait CourseEntityGetAttributeData
 {
     /**
      * En: Get the course id.
-     * Es: Obtener el id de la unidad.
+     * Es: Obtener el id del curso.
      *
      * @return string
      */
@@ -36,71 +36,38 @@ trait CourseEntityGetAttributeData
     }
 
 
-    /**
-     * En: Get Cost Center ID.
-     * Es: Obtener id del centro de costos
+     /**
+     * En: Get description field.
+     * Es: Obtener la descripcion del curso
      *
      * @return string
      */
-    public function getCostCenterID(): string
+    public function getDescription(): string
     {
-        return $this->getAttribute('cost_center_id');
+        return $this->getAttribute('description');
     }
 
     /**
-     * En: Get rph field.
-     * Es: Obtener el campo rph
+     * En: Get star date field.
+     * Es: Obtener el campo fecha de inicio
      *
-     * @return string
+     * @return Carbon
      */
-    public function getRph(): string
+    public function getStarDate(): Carbon
     {
-        return $this->getAttribute('rph');
+        return $this->getAttribute('start_date');
     }
 
 
     /**
-     * En: Get Guarantee Indicator status.
-     * Es: Obtener el campo indicador de garantia
+     * En: Get end date field.
+     * Es: Obtener el campo de fecha de finalizacion del curso.
      *
-     * @return bool
+     * @return Carbon
      */
-    public function getGuaranteeIndicator(): bool
+    public function getEndDate(): Carbon
     {
-        return $this->getAttribute('guarantee_indicator');
-    }
-
-    /**
-     * En: Get Guarantee Type Code field.
-     * Es: Obtener el campo codigo tipo de garantia
-     *
-     * @return string
-     */
-    public function getGuaranteeTypeCode(): string
-    {
-        return $this->getAttribute('guarantee_type_code');
-    }
-
-    /**
-     * En: Get Guarantee id field.
-     * Es: Obtener el campo id de garantia
-     *
-     * @return string
-     */
-    public function getGuaranteeID(): string
-    {
-        return $this->getAttribute('guarantee_id');
-    }
-
-    /**
-     * En: Get Remark field.
-     * Es: Obtener el campo Observación
-     *
-     * @return string
-     */
-    public function getRemark(): string
-    {
-        return $this->getAttribute('remark');
+        return $this->getAttribute('end_date');
     }
 
     /**

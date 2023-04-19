@@ -14,7 +14,7 @@ interface CourseEntity
 {
     /**
      * En: Get the course id.
-     * Es: Obtener el id de la unidad.
+     * Es: Obtener el id del curso .
      *
      * @return string
      */
@@ -29,56 +29,34 @@ interface CourseEntity
     public function getName(): string;
 
     /**
-     * En: Get Cost Center ID.
-     * Es: Obtener id del centro de costos
+     * En: Get description field.
+     * Es: Obtener la descripcion del curso
      *
      * @return string
      */
-    public function getCostCenterID(): string;
+    public function getDescription(): string;
 
     /**
-     * En: Get rph field.
-     * Es: Obtener el campo rph
+     * En: Get star date field.
+     * Es: Obtener el campo fecha de inicio
      *
-     * @return string
+     * @return Carbon
      */
-    public function getRph(): string;
+    public function getStarDate(): Carbon;
 
 
     /**
-     * En: Get GuaranteeIndicator status.
-     * Es: Obtener el campo de estado.
+     * En: Get end date field.
+     * Es: Obtener el campo de fecha de finalizacion del curso.
      *
-     * @return bool
+     * @return Carbon
      */
-    public function getGuaranteeIndicator(): bool;
+    public function getEndDate(): Carbon;
+
+
 
     /**
-     * En: Get Guarantee Type Code field.
-     * Es: Obtener el campo codigo tipo de garantia
-     *
-     * @return string
-     */
-    public function getGuaranteeTypeCode(): string;
-
-    /**
-     * En: Get Guarantee id field.
-     * Es: Obtener el campo id de garantia
-     *
-     * @return string
-     */
-    public function getGuaranteeID(): string;
-
-    /**
-     * En: Get Remark field.
-     * Es: Obtener el campo Observación
-     *
-     * @return string
-     */
-    public function getRemark(): string;
-
-    /**
-     * En: Get registration status.
+     * En: Get status field.
      * Es: Obtener el campo de estado.
      *
      * @return bool
@@ -87,7 +65,7 @@ interface CourseEntity
 
     /**
      * En: Get course creation date.
-     * Es: Obtener fecha de creación de la unidad.
+     * Es: Obtener fecha de creación del curso.
      *
      * @return Carbon
      */
@@ -95,7 +73,7 @@ interface CourseEntity
 
     /**
      * En: Get course update date.
-     * Es: Obtener fecha de actualización de la unidad.
+     * Es: Obtener fecha de actualización del curso.
      *
      * @return Carbon
      */

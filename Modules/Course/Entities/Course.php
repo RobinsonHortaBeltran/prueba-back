@@ -24,13 +24,10 @@ class Course extends Blueprint implements CourseEntity
      */
     protected $fillable = [
         'name',
-        'cost_center_id',
-        'rph',
-        'guarantee_indicator',
-        'guarantee_type_code',
-        'guarantee_id',
-        'remark',
-        'status'
+        'description',
+        'start_date',
+        'end_date',
+        'status',
     ];
 
 }
