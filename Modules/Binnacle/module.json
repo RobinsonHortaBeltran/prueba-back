@@ -1,0 +1,14 @@
+{
+    "name": "Binnacle",
+    "alias": "binnacle",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Binnacle\\Providers\\BinnacleServiceProvider",
+        "Modules\\Binnacle\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

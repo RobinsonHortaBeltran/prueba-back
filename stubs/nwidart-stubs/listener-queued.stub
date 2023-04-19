@@ -1,0 +1,41 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use $EVENTNAME$;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+/**
+ * En: Listen to events.
+ * Es: Escuchar eventos.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ implements ShouldQueue
+{
+    use InteractsWithQueue;
+
+    /**
+     * En: Create the event listener.
+     * Es: Crea el receptor de eventos.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * En: Handle the event.
+     * Es: Maneja el evento.
+     *
+     * @param  $SHORTEVENTNAME$  $event
+     * @return void
+     */
+    public function handle($SHORTEVENTNAME$ $event): void
+    {
+        //
+    }
+}

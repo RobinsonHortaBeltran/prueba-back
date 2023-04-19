@@ -1,0 +1,15 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Routing\Controller;
+
+/**
+ * En: Module controller.
+ * Es: Controlador del módulo.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Controller
+{
+}

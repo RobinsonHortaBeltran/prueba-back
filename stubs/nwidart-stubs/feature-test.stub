@@ -1,0 +1,28 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+/**
+ * En: Feature test.
+ * Es: Prueba de características.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends TestCase
+{
+    /**
+     * En: A basic feature test example.
+     * Es: Un ejemplo de prueba de características básicas.
+     *
+     * @return void
+     */
+    public function testExample(): void
+    {
+        $response = $this->get('/');
+        $response->assertStatus(200);
+    }
+}

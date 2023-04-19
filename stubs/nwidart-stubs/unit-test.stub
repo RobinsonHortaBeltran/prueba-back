@@ -1,0 +1,27 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+/**
+ * En: Basic unit test.
+ * Es: Prueba unitaria básica.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends TestCase
+{
+    /**
+     * En: A basic unit test example.
+     * Es: Un ejemplo de prueba unitaria básica.
+     *
+     * @return void
+     */
+    public function testExample(): void
+    {
+        $this->assertTrue(true);
+    }
+}

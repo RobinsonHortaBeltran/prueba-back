@@ -1,0 +1,80 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Console\Command;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Input\InputArgument;
+
+/**
+ * En: Register console command.
+ * Es: Registrar comando de consola.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Command
+{
+    /**
+     * En: The name and signature of the console command.
+     * Es: El nombre y la firma del comando de la consola.
+     *
+     * @var string
+     */
+    protected $name = '$COMMAND_NAME$';
+
+    /**
+     * En: The console command description.
+     * Es: La descripción del comando de la consola.
+     *
+     * @var string
+     */
+    protected $description = 'Command description.';
+
+    /**
+     * En: Create a new command instance.
+     * Es: Cree una nueva instancia de comando.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * En: Execute the console command.
+     * Es: Ejecuta el comando de la consola.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        //
+    }
+
+    /**
+     * En: Get the console command arguments.
+     * Es: Obtener los argumentos del comando de la consola.
+     *
+     * @return array
+     */
+    protected function getArguments(): array
+    {
+        return [
+            ['example', InputArgument::REQUIRED, 'An example argument.'],
+        ];
+    }
+
+    /**
+     * En: Get the console command options.
+     * Es: Obtenga las opciones del comando de la consola.
+     *
+     * @return array
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+        ];
+    }
+}

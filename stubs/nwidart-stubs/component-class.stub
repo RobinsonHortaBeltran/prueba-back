@@ -1,0 +1,36 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\View\Component;
+
+/**
+ * En: View component.
+ * Es: Componente de vista.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Component
+{
+    /**
+     * En: Create a new component instance.
+     * Es: Crear una nueva instancia de componente.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * En: Get the view / contents that represent the component.
+     * Es: Obtener la vista / contenido que representa el componente.
+     *
+     * @return \Illuminate\View\View|string
+     */
+    public function render()
+    {
+        return view('$LOWER_NAME$::$COMPONENT_NAME$');
+    }
+}

@@ -1,0 +1,34 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * En: Module data factory.
+ * Es: Fábrica de datos del módulo.
+ *
+ * @package $NAME$Factory
+ */
+class $NAME$Factory extends Factory
+{
+    /**
+     * En: The name of the factory's corresponding model.
+     * Es: El nombre del modelo correspondiente de la fábrica.
+     *
+     * @var string
+     */
+    protected $model = \$MODEL_NAMESPACE$\$NAME$::class;
+
+    /**
+     * En: Define the model's default state.
+     * Es: Define el estado por defecto del modelo.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [];
+    }
+}
+

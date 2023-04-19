@@ -1,0 +1,27 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+/**
+ * En: Policy.
+ * Es: Política.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$
+{
+    use HandlesAuthorization;
+
+    /**
+     * En: Create a new policy instance.
+     * Es: Cree una nueva instancia de política.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+}

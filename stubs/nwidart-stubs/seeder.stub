@@ -1,0 +1,26 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * En: Load seed data for the module table.
+ * Es: Cargar datos semilla para la tabla del módulo.
+ *
+ * @package $NAME$
+ */
+class $NAME$ extends Seeder
+{
+    /**
+     * En: Run the database seeds.
+     * Es: Ejecute las semillas de la base de datos.
+     *
+     * @return void
+     */
+    public function run(): void
+    {
+        Model::unguard();
+    }
+}

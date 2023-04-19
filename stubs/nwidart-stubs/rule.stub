@@ -1,0 +1,49 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Contracts\Validation\Rule;
+
+/**
+ * En: Validation rules.
+ * Es: Reglas de validación.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ implements Rule
+{
+    /**
+     * En: Create a new rule instance.
+     * Es: Crear una nueva instancia de regla.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * En: Determine if the validation rule passes.
+     * Es: Determina si la regla de validación es correcta.
+     *
+     * @param  string  $attribute
+     * @param  mixed  $value
+     * @return bool
+     */
+    public function passes($attribute, $value): bool
+    {
+        //
+    }
+
+    /**
+     * En: Get the validation error message.
+     * Es: Obtenga el mensaje de error de validación.
+     *
+     * @return string
+     */
+    public function message(): string
+    {
+        return 'The validation error message.';
+    }
+}

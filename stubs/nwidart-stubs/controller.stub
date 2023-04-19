@@ -1,0 +1,99 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Contracts\Support\Renderable;
+
+/**
+ * En: Module controller.
+ * Es: Controlador del módulo.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Controller
+{
+    /**
+     * En: Display a listing of the resource.
+     * Es: Mostrar una lista del recurso.
+     *
+     * @return Renderable
+     */
+    public function index(): Renderable
+    {
+        return view('$LOWER_NAME$::index');
+    }
+
+    /**
+     * En: Show the form for creating a new resource.
+     * Es: Muestra el formulario para crear un nuevo recurso.
+     *
+     * @return Renderable
+     */
+    public function create(): Renderable
+    {
+        return view('$LOWER_NAME$::create');
+    }
+
+    /**
+     * En: Store a newly created resource in storage.
+     * Es: Almacene un recurso recién creado en el almacenamiento.
+     *
+     * @param  Request $request
+     * @return void
+     */
+    public function store(Request $request): void
+    {
+        //
+    }
+
+    /**
+     * En: Show the specified resource.
+     * Es: Show the specified resource.
+     *
+     * @param  int $id
+     * @return Renderable
+     */
+    public function show($id): Renderable
+    {
+        return view('$LOWER_NAME$::show');
+    }
+
+    /**
+     * En: Show the form for editing the specified resource.
+     * Es: Muestra el formulario para editar el recurso especificado.
+     *
+     * @param  int $id
+     * @return Renderable
+     */
+    public function edit($id): Renderable
+    {
+        return view('$LOWER_NAME$::edit');
+    }
+
+    /**
+     * En: Update the specified resource in storage.
+     * Es: Actualice el recurso especificado en el almacenamiento.
+     *
+     * @param  Request $request
+     * @param  int $id
+     * @return void
+     */
+    public function update(Request $request, $id): void
+    {
+        //
+    }
+
+    /**
+     * En: Remove the specified resource from storage.
+     * Es: Elimina el recurso especificado del almacenamiento.
+     *
+     * @param  int $id
+     * @return void
+     */
+    public function destroy($id): void
+    {
+        //
+    }
+}

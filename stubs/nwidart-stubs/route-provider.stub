@@ -1,0 +1,79 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+
+/**
+ * En: Route service provider.
+ * Es: Proveedor de servicios de ruta.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * En: The module namespace to assume when generating URLs to actions.
+     * Es: El espacio de nombres del módulo que se asumirá al generar direcciónes URL para acciones.
+     *
+     * @var string
+     */
+    protected $moduleNamespace = '$MODULE_NAMESPACE$\$MODULE$\$CONTROLLER_NAMESPACE$';
+
+    /**
+     * En: Called before routes are registered.
+     * Register any model bindings or pattern based filters.
+     * Es: Llamado antes de que se registren las rutas.
+     * Registre cualquier vinculación de modelos o filtros basados en patrones.
+     *
+     * @return void
+     */
+    public function boot(): void
+    {
+        parent::boot();
+    }
+
+    /**
+     * En: Define the routes for the application.
+     * Es: Defina las rutas para la aplicación.
+     *
+     * @return void
+     */
+    public function map(): void
+    {
+        $this->mapApiRoutes();
+        $this->mapWebRoutes();
+    }
+
+    /**
+     * En: Define the "web" routes for the application.
+     * These routes all receive session state, CSRF protection, etc.
+     * Es: Defina las rutas "web" para la aplicación.
+     * Todas estas rutas reciben estado de sesión, protección CSRF, etc.
+     *
+     * @return void
+     */
+    protected function mapWebRoutes(): void
+    {
+        Route::middleware('web')
+            ->namespace($this->moduleNamespace)
+            ->group(module_path('$MODULE$', '$WEB_ROUTES_PATH$'));
+    }
+
+    /**
+     * En: Define the "api" routes for the application.
+     * These routes are typically stateless.
+     * Es: Defina las rutas "api" para la aplicación.
+     * Estas rutas son típicamente sin estado.
+     *
+     * @return void
+     */
+    protected function mapApiRoutes(): void
+    {
+        Route::prefix('api')
+            ->middleware('api')
+            ->namespace($this->moduleNamespace)
+            ->group(module_path('$MODULE$', '$API_ROUTES_PATH$'));
+    }
+}

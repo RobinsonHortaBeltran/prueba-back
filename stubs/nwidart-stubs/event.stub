@@ -1,0 +1,38 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Queue\SerializesModels;
+
+/**
+ * En: Event service provider of the module.
+ * Es: Proveedor de servicios de eventos del módulo.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$
+{
+    use SerializesModels;
+
+    /**
+     * En: Create a new event instance.
+     * Es: Crear una nueva instancia de evento.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * En: Get the channels the event should be broadcast on.
+     * Es: Obtenga los canales en los que debe emitirse el evento.
+     *
+     * @return array
+     */
+    public function broadcastOn(): array
+    {
+        return [];
+    }
+}

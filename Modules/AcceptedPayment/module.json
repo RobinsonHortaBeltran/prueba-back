@@ -1,0 +1,12 @@
+{
+    "name": "AcceptedPayment",
+    "alias": "acceptedPayment",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AcceptedPayment\\Providers\\AcceptedPaymentServiceProvider",
+        "Modules\\AcceptedPayment\\Providers\\EventServiceProvider"
+    ],
+    "files": []
+}

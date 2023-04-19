@@ -1,0 +1,36 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\ServiceProvider;
+
+/**
+ * En: Service provider.
+ * Es: Proveedor de servicios.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * En: Register the service provider.
+     * Es: Registrar el proveedor de servicios.
+     *
+     * @return void
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * En: Get the services provided by the provider.
+     * Es: Obtenga los servicios prestados por el proveedor.
+     *
+     * @return array
+     */
+    public function provides(): array
+    {
+        return [];
+    }
+}

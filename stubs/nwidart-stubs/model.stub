@@ -1,0 +1,22 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * En: Data entity of the module.
+ * Es: Entidad de datos del módulo.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Model
+{
+    /**
+     * En: The attributes that are mass assignable.
+     * Es: Los atributos que se pueden asignar en masa.
+     * 
+     * @var array
+     */
+    protected $fillable = $FILLABLE$;
+}

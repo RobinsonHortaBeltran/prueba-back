@@ -1,0 +1,28 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+/**
+ * En: Collection of resources.
+ * Es: Colección de recursos.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends JsonResource
+{
+    /**
+     * En: Transform the resource into an array.
+     * Es: Transforma el recurso en un array.
+     *
+     * @param  \Illuminate\Http\Request
+     * @return array
+     */
+    public function toArray($request): array
+    {
+        return parent::toArray(
+            $request
+        );
+    }
+}

@@ -1,0 +1,76 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Controller;
+
+/**
+ * En: Module controller.
+ * Es: Controlador del módulo.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ extends Controller
+{
+    /**
+     * En: Display a listing of the resource.
+     * Es: Muestra un listado del recurso.
+     *
+     * @return Response
+     */
+    public function index(): Response
+    {
+        //
+    }
+
+    /**
+     * En: Store a newly created resource in storage.
+     * Es: Guarda un recurso recién creado en el almacén.
+     *
+     * @param  Request $request
+     * @return Response
+     */
+    public function store(Request $request): Response
+    {
+        //
+    }
+
+    /**
+     * En: Show the specified resource.
+     * Es: Mostrar el recurso especificado.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function show(int $id):Response
+    {
+        //
+    }
+
+    /**
+     * En: Update the specified resource in storage.
+     * Es: Actualiza el recurso especificado en el almacén.
+     *
+     * @param  Request $request
+     * @param  int $id
+     * @return Response
+     */
+    public function update(Request $request, int $id): Response
+    {
+        //
+    }
+
+    /**
+     * En: Remove the specified resource from storage.
+     * Es: Retira el recurso especificado del almacenamiento.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function destroy(int $id): Response
+    {
+        //
+    }
+}

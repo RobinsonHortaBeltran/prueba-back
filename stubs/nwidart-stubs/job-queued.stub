@@ -1,0 +1,42 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
+
+/**
+ * En: Scheduled task, queued work.
+ * Es: Tarea programada, trabajo en cola.
+ *
+ * @package $CLASS$
+ */
+class $CLASS$ implements ShouldQueue
+{
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
+    /**
+     * En: Create a new job instance.
+     * Es: Crear una nueva instancia de trabajo.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * En: Execute the job.
+     * Es: Ejecuta el trabajo.
+     *
+     * @return void
+     */
+    public function handle(): void
+    {
+        //
+    }
+}
