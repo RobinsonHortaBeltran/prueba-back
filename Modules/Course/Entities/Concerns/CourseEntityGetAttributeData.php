@@ -55,7 +55,7 @@ trait CourseEntityGetAttributeData
      */
     public function getStarDate(): Carbon
     {
-        return $this->getAttribute('start_date');
+        return Carbon::parse($this->getAttribute('start_date'));
     }
 
 
@@ -67,7 +67,7 @@ trait CourseEntityGetAttributeData
      */
     public function getEndDate(): Carbon
     {
-        return $this->getAttribute('end_date');
+        return Carbon::parse($this->getAttribute('end_date'));
     }
 
     /**
